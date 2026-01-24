@@ -13,7 +13,7 @@ CFG.torque_yaw_limit  = NaN;
 CFG.gate_xyz  = [-10, 0, 2];
 CFG.start_xyz = [0, 0, 0.2];
 
-bag = ros2bagreader("gate_run_01/");
+bag = ros2bagreader("gate_run_02/");
 
 odomSel = select(bag, "Topic", TOP.odom);
 odomMsg = readMessages(odomSel);
