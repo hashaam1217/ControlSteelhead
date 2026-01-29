@@ -20,7 +20,7 @@ odomMsg = readMessages(odomSel);
 [tO, pO, yawO] = extractOdom(odomMsg);
 
 wrenchSel = select(bag, "Topic", TOP.wrench);
-wrenchMsg = readMessages(wrenchSel;
+wrenchMsg = readMessages(wrenchSel);
 [tU, uLat, uYaw] = extractWrench(wrenchMsg);
 
 t0 = max([tO(1), tU(1)]);
